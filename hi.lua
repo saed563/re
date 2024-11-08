@@ -330,8 +330,6 @@ do
                             BackgroundTransparency = 1,
                             Size = UDim2.new(0, 14, 0, 14),
                             Position = UDim2.new(0, 0, 0, 0),
-                            Image = getsynasset(assets.checkmark),
-                            ImageColor3 = Color3.fromRGB(255, 0, 0),
                             ScaleType = Enum.ScaleType.Fit,
                             Visible = self.window.flags[flag],
                             Parent = button,
@@ -570,8 +568,6 @@ do
                             BackgroundTransparency = 1,
                             Size = UDim2.new(0, 10, 0, 10),
                             Position = UDim2.new(1, -13, 0, 5),
-                            Image = getsynasset(assets.triangle),
-                            ImageColor3 = Color3.fromRGB(255, 255, 255),
                             ScaleType = Enum.ScaleType.Fit,
                             Parent = self.button,
                             Rotation = -90,
@@ -1511,7 +1507,6 @@ do
                 ClipsDescendants = true,
                 AutomaticCanvasSize = Enum.AutomaticSize.Y,
                 BottomImage = "rbxassetid://0",
-                MidImage = getsynasset(assets.square),
                 CanvasSize = UDim2.new(0, 0, 1, 0),
                 ScrollBarThickness = 3,
                 ScrollBarImageTransparency = 0,
@@ -1530,7 +1525,6 @@ do
                 ClipsDescendants = true,
                 AutomaticCanvasSize = Enum.AutomaticSize.Y,
                 BottomImage = "rbxassetid://0",
-                MidImage = getsynasset(assets.square),
                 CanvasSize = UDim2.new(0, 0, 1, 0),
                 ScrollBarThickness = 3,
                 ScrollBarImageTransparency = 0,
@@ -1671,7 +1665,6 @@ do
           DisplayOrder = 0,
           Parent = game:GetService("CoreGui")
         })
-        syn.protect_gui(self.window)
         self.position = position
         self.size = size
         self.title = title
@@ -1742,7 +1735,6 @@ do
         self:add_object("ImageLabel", {
           Name = generate_guid(),
           BackgroundTransparency = 1,
-          Image = getsynasset(assets.colorpicker),
           BorderSizePixel = 0,
           Size = UDim2.new(1, 0, 1, 0),
           Position = UDim2.new(0, 0, 0, 0),
@@ -1764,7 +1756,6 @@ do
         self:add_object("ImageLabel", {
           Name = generate_guid(),
           BackgroundTransparency = 1,
-          Image = getsynasset(assets.colorpicker_location),
           BorderSizePixel = 0,
           Size = UDim2.new(1, 0, 1, 0),
           Position = UDim2.new(0, 0, 0, 0),
@@ -1791,7 +1782,6 @@ do
           AutomaticCanvasSize = Enum.AutomaticSize.Y,
           TopImage = "rbxassetid://0",
           BottomImage = "rbxassetid://0",
-          MidImage = getsynasset(assets.square),
           VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
         })
         self:add_object("UIPadding", {
@@ -1851,7 +1841,6 @@ do
         self.hue_slider_location = self:add_object("ImageLabel", {
           Name = generate_guid(),
           BackgroundTransparency = 1,
-          Image = getsynasset(assets.slider_location),
           BorderSizePixel = 0,
           Size = UDim2.new(0, 15, 0, 5),
           Position = UDim2.new(0, 0, 0, 0),
@@ -1885,7 +1874,6 @@ do
         local transparent_pattern = self:add_object("ImageLabel", {
           Name = generate_guid(),
           BackgroundTransparency = 1,
-          Image = getsynasset(assets.transparent_pattern),
           BorderSizePixel = 0,
           Size = UDim2.new(0, 15, 0, 180),
           Position = UDim2.new(0, 17, 0, 1),
@@ -1898,7 +1886,6 @@ do
         self.opacity_slider_location = self:add_object("ImageLabel", {
           Name = generate_guid(),
           BackgroundTransparency = 1,
-          Image = getsynasset(assets.slider_location),
           BorderSizePixel = 0,
           Size = UDim2.new(0, 15, 0, 5),
           Position = UDim2.new(0, 0, 0, 0),
